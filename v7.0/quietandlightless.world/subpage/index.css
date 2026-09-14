@@ -1,0 +1,168 @@
+/* Common */
+
+html, body {
+	color-scheme: dark;
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.main-content {
+	/* Fake input only */
+	/* opacity: 0.8; */
+
+	place-content: center;
+	width: 100dvw;
+	height: 100dvh;
+	display: grid;
+}
+
+/* ========================================================================= */
+/* Video pages: Runic text video + other paths */
+
+.content {
+	max-width: 100dvw;
+	height: auto;
+}
+
+/* ========================================================================= */
+/* Roman numeral images */
+
+.image {
+	aspect-ratio: 2306 / 1396;   /* varies by image: <W> / <H> */
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 120.902%;   /* varies by image */
+	width: min(100dvw, 2306px);  /* varies by image: px matches aspect-ratio <W> */
+}
+
+/* ========================================================================= */
+/* Input pages: real + fake */
+
+.row {
+	grid-template-columns: 1fr minmax(0, 494px) 1fr;
+	align-items: center;
+	width: 100dvw;
+	display: grid;
+}
+
+.row hr {
+	opacity: 0.4;
+}
+
+.input-container {
+	justify-content: center;
+	align-items: center;
+	max-width: 494px;
+	height: 100px;
+	display: flex;
+	position: relative;
+}
+
+.input-container-bg {
+	z-index: var(--layer-dialog);
+	background-image: url(/img/bg/input2-dialog.svg);  /* Fake input: input3-dialog.svg */
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	inset: 0;
+}
+
+#bg {
+	/* Fake input only */
+	/* opacity: 0.4; */
+
+	width: 100dvw;
+	height: 100dvh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+/* ========================================================================= */
+/* Real input only */
+
+.input-2 {
+	--content-w: clamp(300px, calc(100dvw - 32px), 640px);
+	position: relative;
+}
+
+.caret {
+	width: 23px;
+	height: 23px;
+	margin-top: 1px;
+	transition: scale 0.4s ease-in-out;
+}
+
+.caret-container {
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: absolute;
+	top: 0;
+}
+
+.caret-container:hover .caret {
+	scale: 1.1;
+}
+
+.caret-container.inactive {
+	pointer-events: none;
+}
+
+.text-input {
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: var(--font-spacemono);
+	font-size: calc(var(--content-w) * 0.05);
+	letter-spacing: calc(var(--content-w) * 0.01);
+	width: calc(var(--content-w) * 0.625);
+	background-color: #0000;
+	border: none;
+	outline: none;
+	max-width: 100%;
+	padding: 4px 8px;
+	font-weight: 400;
+}
+
+.output {
+	z-index: var(--layer-dialog);
+	color: #fff;
+	width: max-content;
+	font-size: 24px;
+	font-family: var(--font-spacemono);
+	text-align: center;
+	white-space: nowrap;
+	pointer-events: none;
+	flex-direction: column;
+	align-items: center;
+	display: flex;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.output .line {
+	display: block;
+}
+
+.output .line:nth-child(2) {
+	margin-top: 2em;
+}
+
+.output .line:nth-child(3) {
+	margin-top: 4px;
+}
+
+@media (width <= 600px) {
+	.output {
+		font-size: 0.9rem;
+	}
+}
