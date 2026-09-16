@@ -6,6 +6,12 @@
 
 Arcaea 歷代 ARG 的相關資料整理，依版本區分，並附上各自的完整紀錄。
 
+## Version 4.0
+
+通往故事曲包 **Final Verdict** 的 ARG。[v4.0](v4.0) 收錄字母影片，以及可解讀與生成其替換式密碼的 Python 腳本。
+
+完整紀錄（英文）：[Notion](https://ritmo-v0.notion.site/2022-Arcaea-ARG-4750aeef701643ca99adf47133016696)
+
 ## Version 7.0
 
 通往故事曲包 **Divine Oblivion** 的 ARG。其中一部分在 `quietandlightless.world` 上進行，也就是 [v7.0](v7.0) 收錄的內容。

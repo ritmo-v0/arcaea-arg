@@ -6,6 +6,12 @@
 
 Notes and materials gathered from Arcaea's ARGs, organized by version, each paired with a full write-up.
 
+## Version 4.0
+
+The ARG that led to the **Final Verdict** story pack. [v4.0](v4.0) holds its letter string videos, plus Python scripts that read and write its substitution cipher.
+
+Full write-up (in English): [Notion](https://ritmo-v0.notion.site/2022-Arcaea-ARG-4750aeef701643ca99adf47133016696)
+
 ## Version 7.0
 
 The ARG that led to the **Divine Oblivion** story pack. Part of it ran on `quietandlightless.world`, which is what [v7.0](v7.0) holds.

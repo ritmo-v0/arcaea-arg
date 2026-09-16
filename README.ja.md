@@ -6,6 +6,12 @@
 
 Arcaea の歴代 ARG に関する資料をまとめたものです。バージョンごとに整理し、それぞれの詳しい記録を添えています。
 
+## Version 4.0
+
+ストーリーパック **Final Verdict** へと繋がった ARG。[v4.0](v4.0) には、文字が映り込む映像と、換字式暗号を解読・生成する Python スクリプトを収めてあります。
+
+全記録（英語）：[Notion](https://ritmo-v0.notion.site/2022-Arcaea-ARG-4750aeef701643ca99adf47133016696)
+
 ## Version 7.0
 
 ストーリーパック **Divine Oblivion** へと繋がった ARG。その一部は `quietandlightless.world` 上で展開されており、[v7.0](v7.0) に収めてあるのはその内容です。
